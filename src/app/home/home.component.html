@@ -1,7 +1,8 @@
 <div>
   <form action="" (ngSubmit)="onSubmit()">
-    <input type="text" id="item" required="" [(ngModel)]="itemValue" name="item">
+    <input type="text" id="id" required="" [(ngModel)]="id" name="item">
+    <input type="text" id="value" required="" [(ngModel)]="value" name="item">
     <button type="submit">submit</button>
   </form>
-  <pre *ngFor="let item of items | async">{{item.content}}</pre>
+  <pre *ngFor="let item of items | async">{{item.id}}{{item.name}}</pre>
 </div>

@@ -10,11 +10,12 @@ import {Observable} from 'rxjs';
 export class HomeComponent implements OnInit {
   title = 'angfire';
 
-  itemValue = '';
+  id = '';
+  value = '';
   items: Observable<any[]>;
 
   constructor(public db: AngularFireDatabase) {
-    this.items = db.list('events').valueChanges();
+    this.items = db.list('event').valueChanges();
   }
 
   ngOnInit(): void {
@@ -22,7 +23,8 @@ export class HomeComponent implements OnInit {
 
   // tslint:disable-next-line:typedef
   onSubmit(){
-    this.db.list('events').push({content: this.itemValue});
-    this.itemValue = '';
+    this.db.list('event').push({id: this.id, name: this.value});
+    this.id = '';
+    this.value = '';
   }
 }

@@ -1,0 +1,429 @@
+[debug] [2020-09-01T04:24:00.816Z] ----------------------------------------------------------------------
+[debug] [2020-09-01T04:24:00.818Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-09-01T04:24:00.818Z] CLI Version:   8.9.2
+[debug] [2020-09-01T04:24:00.818Z] Platform:      win32
+[debug] [2020-09-01T04:24:00.818Z] Node Version:  v12.18.3
+[debug] [2020-09-01T04:24:00.819Z] Time:          Tue Sep 01 2020 11:24:00 GMT+0700 (Indochina Time)
+[debug] [2020-09-01T04:24:00.819Z] ----------------------------------------------------------------------
+[debug] [2020-09-01T04:24:00.819Z] 
+[debug] [2020-09-01T04:24:00.826Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-01T04:24:00.826Z] > authorizing via signed-in user
+[debug] [2020-09-01T04:24:00.826Z] [iam] checking project caodaithanhthe-b5c6e for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2020-09-01T04:24:00.829Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/caodaithanhthe-b5c6e:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2020-09-01T04:24:01.854Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Sep 2020 04:24:03 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=838","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-01T04:24:01.856Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/caodaithanhthe-b5c6e  
+ 
+[debug] [2020-09-01T04:24:02.294Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Sep 2020 04:24:04 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'caodaithanhthe-b5c6e'...
+[info] 
+[info] i  deploying database, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2020-09-01T04:24:02.305Z] >>> HTTP REQUEST PUT https://caodaithanhthe-b5c6e.firebaseio.com/.settings/rules.json?dryRun=true  
+ // This rule allows anyone with your database reference to view, edit,
+// and delete all data in your database. It is useful for getting
+// started, but it is configured to expire after 30 days because it
+// leaves your app open to attackers. At that time, all client
+// requests to your database will be denied.
+//
+// Make sure to write security rules for your app before that time, or else
+// all client requests to your database will be denied until you Update
+// your rules
+{
+  "rules": {
+    ".read": "now < 1599757200000",  // 2020-9-11
+    ".write": "now < 1599757200000",  // 2020-9-11
+  }
+}
+[debug] [2020-09-01T04:24:03.111Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Tue, 01 Sep 2020 04:24:05 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[debug] [2020-09-01T04:27:13.218Z] ----------------------------------------------------------------------
+[debug] [2020-09-01T04:27:13.220Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-09-01T04:27:13.221Z] CLI Version:   8.9.2
+[debug] [2020-09-01T04:27:13.221Z] Platform:      win32
+[debug] [2020-09-01T04:27:13.221Z] Node Version:  v12.18.3
+[debug] [2020-09-01T04:27:13.222Z] Time:          Tue Sep 01 2020 11:27:13 GMT+0700 (Indochina Time)
+[debug] [2020-09-01T04:27:13.222Z] ----------------------------------------------------------------------
+[debug] [2020-09-01T04:27:13.222Z] 
+[debug] [2020-09-01T04:27:13.229Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-01T04:27:13.229Z] > authorizing via signed-in user
+[debug] [2020-09-01T04:27:13.229Z] [iam] checking project caodaithanhthe-b5c6e for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2020-09-01T04:27:13.232Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/caodaithanhthe-b5c6e:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2020-09-01T04:27:14.264Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Sep 2020 04:27:16 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=825","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-01T04:27:14.266Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/caodaithanhthe-b5c6e  
+ 
+[debug] [2020-09-01T04:27:14.854Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Sep 2020 04:27:17 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'caodaithanhthe-b5c6e'...
+[info] 
+[info] i  deploying database, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2020-09-01T04:27:14.865Z] >>> HTTP REQUEST PUT https://caodaithanhthe-b5c6e.firebaseio.com/.settings/rules.json?dryRun=true  
+ // This rule allows anyone with your database reference to view, edit,
+// and delete all data in your database. It is useful for getting
+// started, but it is configured to expire after 30 days because it
+// leaves your app open to attackers. At that time, all client
+// requests to your database will be denied.
+//
+// Make sure to write security rules for your app before that time, or else
+// all client requests to your database will be denied until you Update
+// your rules
+{
+  "rules": {
+    ".read": "now < 1599757200000",  // 2020-9-11
+    ".write": "now < 1599757200000",  // 2020-9-11
+  }
+}
+[debug] [2020-09-01T04:27:15.767Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Tue, 01 Sep 2020 04:27:17 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[debug] [2020-09-01T04:28:27.256Z] ----------------------------------------------------------------------
+[debug] [2020-09-01T04:28:27.258Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-09-01T04:28:27.258Z] CLI Version:   8.9.2
+[debug] [2020-09-01T04:28:27.258Z] Platform:      win32
+[debug] [2020-09-01T04:28:27.258Z] Node Version:  v12.18.3
+[debug] [2020-09-01T04:28:27.259Z] Time:          Tue Sep 01 2020 11:28:27 GMT+0700 (Indochina Time)
+[debug] [2020-09-01T04:28:27.259Z] ----------------------------------------------------------------------
+[debug] [2020-09-01T04:28:27.259Z] 
+[debug] [2020-09-01T04:28:27.268Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-01T04:28:27.269Z] > authorizing via signed-in user
+[debug] [2020-09-01T04:28:27.269Z] [iam] checking project caodaithanhthe-b5c6e for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2020-09-01T04:28:27.271Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/caodaithanhthe-b5c6e:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2020-09-01T04:28:28.260Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Sep 2020 04:28:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=825","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-01T04:28:28.263Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/caodaithanhthe-b5c6e  
+ 
+[debug] [2020-09-01T04:28:28.839Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Sep 2020 04:28:31 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'caodaithanhthe-b5c6e'...
+[info] 
+[info] i  deploying database, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2020-09-01T04:28:28.849Z] >>> HTTP REQUEST PUT https://caodaithanhthe-b5c6e.firebaseio.com/.settings/rules.json?dryRun=true  
+ // This rule allows anyone with your database reference to view, edit,
+// and delete all data in your database. It is useful for getting
+// started, but it is configured to expire after 30 days because it
+// leaves your app open to attackers. At that time, all client
+// requests to your database will be denied.
+//
+// Make sure to write security rules for your app before that time, or else
+// all client requests to your database will be denied until you Update
+// your rules
+{
+  "rules": {
+    ".read": "now < 1599757200000",  // 2020-9-11
+    ".write": "now < 1599757200000",  // 2020-9-11
+  }
+}
+[debug] [2020-09-01T04:28:29.683Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Tue, 01 Sep 2020 04:28:31 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[debug] [2020-09-01T04:29:19.338Z] ----------------------------------------------------------------------
+[debug] [2020-09-01T04:29:19.339Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-09-01T04:29:19.340Z] CLI Version:   8.9.2
+[debug] [2020-09-01T04:29:19.340Z] Platform:      win32
+[debug] [2020-09-01T04:29:19.340Z] Node Version:  v12.18.3
+[debug] [2020-09-01T04:29:19.340Z] Time:          Tue Sep 01 2020 11:29:19 GMT+0700 (Indochina Time)
+[debug] [2020-09-01T04:29:19.340Z] ----------------------------------------------------------------------
+[debug] [2020-09-01T04:29:19.341Z] 
+[debug] [2020-09-01T04:29:19.348Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-01T04:29:19.349Z] > authorizing via signed-in user
+[debug] [2020-09-01T04:29:19.349Z] [iam] checking project caodaithanhthe-b5c6e for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2020-09-01T04:29:19.351Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/caodaithanhthe-b5c6e:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2020-09-01T04:29:20.499Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Sep 2020 04:29:22 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=840","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-01T04:29:20.500Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/caodaithanhthe-b5c6e  
+ 
+[debug] [2020-09-01T04:29:21.214Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Sep 2020 04:29:23 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'caodaithanhthe-b5c6e'...
+[info] 
+[info] i  deploying database, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2020-09-01T04:29:21.224Z] >>> HTTP REQUEST PUT https://caodaithanhthe-b5c6e.firebaseio.com/.settings/rules.json?dryRun=true  
+ // This rule allows anyone with your database reference to view, edit,
+// and delete all data in your database. It is useful for getting
+// started, but it is configured to expire after 30 days because it
+// leaves your app open to attackers. At that time, all client
+// requests to your database will be denied.
+//
+// Make sure to write security rules for your app before that time, or else
+// all client requests to your database will be denied until you Update
+// your rules
+{
+  "rules": {
+    ".read": "now < 1599757200000",  // 2020-9-11
+    ".write": "now < 1599757200000",  // 2020-9-11
+  }
+}
+[debug] [2020-09-01T04:29:22.201Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Tue, 01 Sep 2020 04:29:24 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[debug] [2020-09-01T04:30:04.057Z] ----------------------------------------------------------------------
+[debug] [2020-09-01T04:30:04.059Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-09-01T04:30:04.059Z] CLI Version:   8.9.2
+[debug] [2020-09-01T04:30:04.059Z] Platform:      win32
+[debug] [2020-09-01T04:30:04.059Z] Node Version:  v12.18.3
+[debug] [2020-09-01T04:30:04.060Z] Time:          Tue Sep 01 2020 11:30:04 GMT+0700 (Indochina Time)
+[debug] [2020-09-01T04:30:04.061Z] ----------------------------------------------------------------------
+[debug] [2020-09-01T04:30:04.061Z] 
+[debug] [2020-09-01T04:30:04.068Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-01T04:30:04.069Z] > authorizing via signed-in user
+[debug] [2020-09-01T04:30:04.069Z] [iam] checking project caodaithanhthe-b5c6e for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2020-09-01T04:30:04.071Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/caodaithanhthe-b5c6e:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2020-09-01T04:30:05.145Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Sep 2020 04:30:07 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=824","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-01T04:30:05.147Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/caodaithanhthe-b5c6e  
+ 
+[debug] [2020-09-01T04:30:05.649Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Sep 2020 04:30:07 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'caodaithanhthe-b5c6e'...
+[info] 
+[info] i  deploying database, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2020-09-01T04:30:05.666Z] >>> HTTP REQUEST PUT https://caodaithanhthe-b5c6e.firebaseio.com/.settings/rules.json?dryRun=true  
+ // This rule allows anyone with your database reference to view, edit,
+// and delete all data in your database. It is useful for getting
+// started, but it is configured to expire after 30 days because it
+// leaves your app open to attackers. At that time, all client
+// requests to your database will be denied.
+//
+// Make sure to write security rules for your app before that time, or else
+// all client requests to your database will be denied until you Update
+// your rules
+{
+  "rules": {
+    ".read": "now < 1599757200000",  // 2020-9-11
+    ".write": "now < 1599757200000",  // 2020-9-11
+  }
+}
+[debug] [2020-09-01T04:30:06.672Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Tue, 01 Sep 2020 04:30:08 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[debug] [2020-09-01T04:31:56.098Z] ----------------------------------------------------------------------
+[debug] [2020-09-01T04:31:56.100Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-09-01T04:31:56.100Z] CLI Version:   8.9.2
+[debug] [2020-09-01T04:31:56.100Z] Platform:      win32
+[debug] [2020-09-01T04:31:56.100Z] Node Version:  v12.18.3
+[debug] [2020-09-01T04:31:56.101Z] Time:          Tue Sep 01 2020 11:31:56 GMT+0700 (Indochina Time)
+[debug] [2020-09-01T04:31:56.101Z] ----------------------------------------------------------------------
+[debug] [2020-09-01T04:31:56.101Z] 
+[debug] [2020-09-01T04:31:56.108Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-01T04:31:56.109Z] > authorizing via signed-in user
+[debug] [2020-09-01T04:31:56.109Z] [iam] checking project caodaithanhthe-b5c6e for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2020-09-01T04:31:56.111Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/caodaithanhthe-b5c6e:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2020-09-01T04:31:57.146Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Sep 2020 04:31:59 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=844","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-01T04:31:57.148Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/caodaithanhthe-b5c6e  
+ 
+[debug] [2020-09-01T04:31:57.673Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Sep 2020 04:31:59 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'caodaithanhthe-b5c6e'...
+[info] 
+[info] i  deploying database, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2020-09-01T04:31:57.691Z] >>> HTTP REQUEST PUT https://caodaithanhthe-b5c6e.firebaseio.com/.settings/rules.json?dryRun=true  
+ // This rule allows anyone with your database reference to view, edit,
+// and delete all data in your database. It is useful for getting
+// started, but it is configured to expire after 30 days because it
+// leaves your app open to attackers. At that time, all client
+// requests to your database will be denied.
+//
+// Make sure to write security rules for your app before that time, or else
+// all client requests to your database will be denied until you Update
+// your rules
+{
+  "rules": {
+    ".read": "now < 1599757200000",  // 2020-9-11
+    ".write": "now < 1599757200000",  // 2020-9-11
+  }
+}
+[debug] [2020-09-01T04:31:58.568Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Tue, 01 Sep 2020 04:32:00 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[debug] [2020-09-01T04:35:07.853Z] ----------------------------------------------------------------------
+[debug] [2020-09-01T04:35:07.855Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-09-01T04:35:07.855Z] CLI Version:   8.9.2
+[debug] [2020-09-01T04:35:07.855Z] Platform:      win32
+[debug] [2020-09-01T04:35:07.855Z] Node Version:  v12.18.3
+[debug] [2020-09-01T04:35:07.856Z] Time:          Tue Sep 01 2020 11:35:07 GMT+0700 (Indochina Time)
+[debug] [2020-09-01T04:35:07.856Z] ----------------------------------------------------------------------
+[debug] [2020-09-01T04:35:07.856Z] 
+[debug] [2020-09-01T04:35:07.863Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-01T04:35:07.864Z] > authorizing via signed-in user
+[debug] [2020-09-01T04:35:07.864Z] [iam] checking project caodaithanhthe-b5c6e for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2020-09-01T04:35:07.866Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/caodaithanhthe-b5c6e:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2020-09-01T04:35:08.949Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Sep 2020 04:35:11 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=834","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-01T04:35:08.951Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/caodaithanhthe-b5c6e  
+ 
+[debug] [2020-09-01T04:35:09.606Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Sep 2020 04:35:11 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'caodaithanhthe-b5c6e'...
+[info] 
+[info] i  deploying database, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2020-09-01T04:35:09.627Z] >>> HTTP REQUEST PUT https://caodaithanhthe-b5c6e.firebaseio.com/.settings/rules.json?dryRun=true  
+ // This rule allows anyone with your database reference to view, edit,
+// and delete all data in your database. It is useful for getting
+// started, but it is configured to expire after 30 days because it
+// leaves your app open to attackers. At that time, all client
+// requests to your database will be denied.
+//
+// Make sure to write security rules for your app before that time, or else
+// all client requests to your database will be denied until you Update
+// your rules
+{
+  "rules": {
+    ".read": "now < 1599757200000",  // 2020-9-11
+    ".write": "now < 1599757200000",  // 2020-9-11
+  }
+}
+[debug] [2020-09-01T04:35:10.644Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Tue, 01 Sep 2020 04:35:12 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[debug] [2020-09-01T04:39:04.186Z] ----------------------------------------------------------------------
+[debug] [2020-09-01T04:39:04.188Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-09-01T04:39:04.188Z] CLI Version:   8.9.2
+[debug] [2020-09-01T04:39:04.188Z] Platform:      win32
+[debug] [2020-09-01T04:39:04.188Z] Node Version:  v12.18.3
+[debug] [2020-09-01T04:39:04.189Z] Time:          Tue Sep 01 2020 11:39:04 GMT+0700 (Indochina Time)
+[debug] [2020-09-01T04:39:04.189Z] ----------------------------------------------------------------------
+[debug] [2020-09-01T04:39:04.189Z] 
+[debug] [2020-09-01T04:39:04.197Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-01T04:39:04.197Z] > authorizing via signed-in user
+[debug] [2020-09-01T04:39:04.198Z] [iam] checking project caodaithanhthe-b5c6e for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2020-09-01T04:39:04.200Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/caodaithanhthe-b5c6e:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2020-09-01T04:39:05.203Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Sep 2020 04:39:07 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=828","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-01T04:39:05.205Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/caodaithanhthe-b5c6e  
+ 
+[debug] [2020-09-01T04:39:05.641Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Sep 2020 04:39:07 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'caodaithanhthe-b5c6e'...
+[info] 
+[info] i  deploying database, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2020-09-01T04:39:05.650Z] >>> HTTP REQUEST PUT https://caodaithanhthe-b5c6e.firebaseio.com/.settings/rules.json?dryRun=true  
+ // This rule allows anyone with your database reference to view, edit,
+// and delete all data in your database. It is useful for getting
+// started, but it is configured to expire after 30 days because it
+// leaves your app open to attackers. At that time, all client
+// requests to your database will be denied.
+//
+// Make sure to write security rules for your app before that time, or else
+// all client requests to your database will be denied until you Update
+// your rules
+{
+  "rules": {
+    ".read": "now < 1599757200000",  // 2020-9-11
+    ".write": "now < 1599757200000",  // 2020-9-11
+  }
+}
+[debug] [2020-09-01T04:39:06.490Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Tue, 01 Sep 2020 04:39:08 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[debug] [2020-09-01T04:40:33.961Z] ----------------------------------------------------------------------
+[debug] [2020-09-01T04:40:33.962Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-09-01T04:40:33.963Z] CLI Version:   8.9.2
+[debug] [2020-09-01T04:40:33.963Z] Platform:      win32
+[debug] [2020-09-01T04:40:33.963Z] Node Version:  v12.18.3
+[debug] [2020-09-01T04:40:33.964Z] Time:          Tue Sep 01 2020 11:40:33 GMT+0700 (Indochina Time)
+[debug] [2020-09-01T04:40:33.964Z] ----------------------------------------------------------------------
+[debug] [2020-09-01T04:40:33.964Z] 
+[debug] [2020-09-01T04:40:33.971Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-01T04:40:33.971Z] > authorizing via signed-in user
+[debug] [2020-09-01T04:40:33.972Z] [iam] checking project caodaithanhthe-b5c6e for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2020-09-01T04:40:33.974Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/caodaithanhthe-b5c6e:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2020-09-01T04:40:35.028Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Sep 2020 04:40:37 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=833","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-01T04:40:35.029Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/caodaithanhthe-b5c6e  
+ 
+[debug] [2020-09-01T04:40:35.516Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Sep 2020 04:40:37 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'caodaithanhthe-b5c6e'...
+[info] 
+[info] i  deploying database, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2020-09-01T04:40:35.525Z] >>> HTTP REQUEST PUT https://caodaithanhthe-b5c6e.firebaseio.com/.settings/rules.json?dryRun=true  
+ // This rule allows anyone with your database reference to view, edit,
+// and delete all data in your database. It is useful for getting
+// started, but it is configured to expire after 30 days because it
+// leaves your app open to attackers. At that time, all client
+// requests to your database will be denied.
+//
+// Make sure to write security rules for your app before that time, or else
+// all client requests to your database will be denied until you Update
+// your rules
+{
+  "rules": {
+    ".read": "now < 1599757200000",  // 2020-9-11
+    ".write": "now < 1599757200000",  // 2020-9-11
+  }
+}
+[debug] [2020-09-01T04:40:36.382Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Tue, 01 Sep 2020 04:40:38 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[debug] [2020-09-01T04:43:51.211Z] ----------------------------------------------------------------------
+[debug] [2020-09-01T04:43:51.212Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-09-01T04:43:51.213Z] CLI Version:   8.9.2
+[debug] [2020-09-01T04:43:51.213Z] Platform:      win32
+[debug] [2020-09-01T04:43:51.213Z] Node Version:  v12.18.3
+[debug] [2020-09-01T04:43:51.214Z] Time:          Tue Sep 01 2020 11:43:51 GMT+0700 (Indochina Time)
+[debug] [2020-09-01T04:43:51.214Z] ----------------------------------------------------------------------
+[debug] [2020-09-01T04:43:51.214Z] 
+[debug] [2020-09-01T04:43:51.221Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-01T04:43:51.221Z] > authorizing via signed-in user
+[debug] [2020-09-01T04:43:51.221Z] [iam] checking project caodaithanhthe-b5c6e for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2020-09-01T04:43:51.223Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/caodaithanhthe-b5c6e:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2020-09-01T04:43:52.491Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Sep 2020 04:43:54 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=830","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-01T04:43:52.493Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/caodaithanhthe-b5c6e  
+ 
+[debug] [2020-09-01T04:43:52.926Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Sep 2020 04:43:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'caodaithanhthe-b5c6e'...
+[info] 
+[info] i  deploying database, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2020-09-01T04:43:52.935Z] >>> HTTP REQUEST PUT https://caodaithanhthe-b5c6e.firebaseio.com/.settings/rules.json?dryRun=true  
+ // This rule allows anyone with your database reference to view, edit,
+// and delete all data in your database. It is useful for getting
+// started, but it is configured to expire after 30 days because it
+// leaves your app open to attackers. At that time, all client
+// requests to your database will be denied.
+//
+// Make sure to write security rules for your app before that time, or else
+// all client requests to your database will be denied until you Update
+// your rules
+{
+  "rules": {
+    ".read": "now < 1599757200000",  // 2020-9-11
+    ".write": "now < 1599757200000",  // 2020-9-11
+  }
+}
+[debug] [2020-09-01T04:43:53.843Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Tue, 01 Sep 2020 04:43:55 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[debug] [2020-09-01T04:49:04.293Z] ----------------------------------------------------------------------
+[debug] [2020-09-01T04:49:04.295Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-09-01T04:49:04.295Z] CLI Version:   8.9.2
+[debug] [2020-09-01T04:49:04.295Z] Platform:      win32
+[debug] [2020-09-01T04:49:04.295Z] Node Version:  v12.18.3
+[debug] [2020-09-01T04:49:04.300Z] Time:          Tue Sep 01 2020 11:49:04 GMT+0700 (Indochina Time)
+[debug] [2020-09-01T04:49:04.301Z] ----------------------------------------------------------------------
+[debug] [2020-09-01T04:49:04.301Z] 
+[debug] [2020-09-01T04:49:04.311Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-01T04:49:04.312Z] > authorizing via signed-in user
+[debug] [2020-09-01T04:49:04.312Z] [iam] checking project caodaithanhthe-b5c6e for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2020-09-01T04:49:04.316Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/caodaithanhthe-b5c6e:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2020-09-01T04:49:05.372Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Sep 2020 04:49:08 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=822","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-09-01T04:49:05.374Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/caodaithanhthe-b5c6e  
+ 
+[debug] [2020-09-01T04:49:05.896Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Sep 2020 04:49:08 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'caodaithanhthe-b5c6e'...
+[info] 
+[info] i  deploying database, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2020-09-01T04:49:05.901Z] >>> HTTP REQUEST PUT https://caodaithanhthe-b5c6e.firebaseio.com/.settings/rules.json?dryRun=true  
+ // This rule allows anyone with your database reference to view, edit,
+// and delete all data in your database. It is useful for getting
+// started, but it is configured to expire after 30 days because it
+// leaves your app open to attackers. At that time, all client
+// requests to your database will be denied.
+//
+// Make sure to write security rules for your app before that time, or else
+// all client requests to your database will be denied until you Update
+// your rules
+{
+  "rules": {
+    ".read": "now < 1599757200000",  // 2020-9-11
+    ".write": "now < 1599757200000",  // 2020-9-11
+  }
+}
+[debug] [2020-09-01T04:49:06.848Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Tue, 01 Sep 2020 04:49:09 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
