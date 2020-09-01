@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import {AngularFireDatabase} from '@angular/fire/database';
+import {Observable} from 'rxjs';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angfire';
+
+  constructor() {
+  }
+
+  // tslint:disable-next-line:typedef
+
 }

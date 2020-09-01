@@ -1,0 +1,7 @@
+<div>
+  <form action="" (ngSubmit)="onSubmit()">
+    <input type="text" id="item" required="" [(ngModel)]="itemValue" name="item">
+    <button type="submit">submit</button>
+  </form>
+  <pre *ngFor="let item of items | async">{{item.content}}</pre>
+</div>
