@@ -1,8 +1,31 @@
 <div>
   <form action="" (ngSubmit)="onSubmit()">
-    <input type="text" id="id" required="" [(ngModel)]="id" name="item">
-    <input type="text" id="value" required="" [(ngModel)]="value" name="item">
+    <input type="text" id="dishId" required="" value="{{dishId}}" name="dishId" disabled>
+    <input type="text" id="dishName" required="" [(ngModel)]="dishName" name="dishName">
+    <input type="text" id="dishPrice" required="" [(ngModel)]="dishPrice" name="dishPrice">
+    <select type="text" id="dishUnit" required="" [(ngModel)]="dishUnit" name="dishUnit">
+      <option value="kg">kg</option>
+      <option value="g">g</option>
+      <option value="package">package</option>
+    </select>
     <button type="submit">submit</button>
   </form>
-  <pre *ngFor="let item of items | async">{{item.id}}{{item.name}}</pre>
+  <table style="width: 100%; text-align: left">
+    <thead>
+    <tr>
+      <th>id</th>
+      <th>name</th>
+      <th>price</th>
+      <th>unit</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let dish of dishes | async">
+      <td>{{dish.id}}</td>
+      <td>{{dish.name}}</td>
+      <td>{{dish.price}}</td>
+      <td>{{dish.unit}}</td>
+    </tr>
+    </tbody>
+  </table>
 </div>
